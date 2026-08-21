@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    max-width: 100vw;
+    background-color: #080808;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, #120000, #350008, #16001f);
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 16px;
+    border-bottom: 2px solid #8b0000;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    color: #ff1a1a;
+    text-shadow: 0 0 10px #8b0000;
+}
+
+header p {
+    margin: 0;
+    color: #cccccc;
+}
+
+main {
+    background-color: #080808;
+    color: #eeeeee;
+    margin: 0 auto;
+    padding: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+
+    background-color: #111111;
+    border: 1px solid #5c0a0a;
+    border-radius: 8px;
+
+    margin: 16px;
+    gap: 16px;
+    padding: 20px;
+
+    flex: 1 1 25%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    box-shadow: 0 0 12px rgba(139, 0, 0, 0.25);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(180, 0, 0, 0.5);
+}
+
+article h2 {
+    color: #ff3333;
+}
+
+article p {
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #6b0000;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: #b30000 !important;
+}
+
+.artigo-fonte {
+    font-size: 14px;
+    color: #888888 !important;
+    font-style: italic;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #660000;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5c0000;
+    transform: scale(1.05);
+}
+
+button span {
+    color: #ff3333;
+    font-weight: bold;
+}
